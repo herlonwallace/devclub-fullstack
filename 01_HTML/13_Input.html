@@ -1,0 +1,34 @@
+<!-- Input -->
+
+<!-- autocomplete: Auto completa o endereço de acordo com que foi passado, exemplo: rua, telefone, nome. -->
+<!-- disable: Desabilita o input de digitar. -->
+<!-- value: Define um nome já no campo do input. -->
+<!-- readonly: Envia o valor para o formulário e também não pode editar. -->
+<!-- placeholder: Fornecer ao usuário uma dica que descreve o valor esperado em um input. -->
+<!-- autofocus: Especifica que um elemento deve receber automaticamente o foco quando a página é carrega.-->
+
+<label for="rua">Rua</label>
+<input id="rua" autocomplete="street-address"placeholder="Digite seu endereço">
+
+<br><br>
+
+<!-- Tyepe: O tipo de controle a ser exibido, podendo ter vários atributo. Os valores possíveis são:
+            color: controle para especificar cores.
+            range: controle para inserir um número.
+            password: Campo de texto com valor é obscurecido.
+            email: campo específico para endereço de e-mail.
+            checkbox: Uma caixa de marcação. Você deve usar o atributo value para definir o valor enviado por este item.
+            file: Controle que permite ao usuário selecionar um arquivo.
+
+-->
+<label>Cor</label>
+<input type="color">
+
+<br><br>
+
+<label>Faixa de valores</label>
+<input type="range" min="0" max="10" value="5">
+
+<br><br>
+<label>Password</label>
+<input type="password">

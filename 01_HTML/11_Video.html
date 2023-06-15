@@ -1,0 +1,25 @@
+<!-- Videos -->
+
+<!-- controls: Adiciona controles de vídeo, como play, pause, e ajuste de volume.  -->
+<!-- controlsList="nodownload": Remove a opção de downloand.  -->
+<!-- autoplay: Assim que a página iniciar o vídeo já inicia, alguns navegadores bloqueia essa função. -->
+<!-- muted: O som do vídeo começa no mudo.  -->
+<!-- poster: O vídeo apresenta uma capa, remover autoplay para aparecer.  -->
+
+<video 
+    src="./exemploVideosLocal.mp4" 
+    controls
+    controlsList="nodownload"
+    autoplay
+    muted
+    poster="./capa.jpeg"
+    >
+</video>
+
+<!-- source: é utilizado para especificar múltiplos recursos de mídia de elementos, garantindo que ira rodar o vídeo. -->
+<!-- height: Tamanho do vídeo. -->
+<video controls height="500">
+    <source src="./exemploVideosLocal.mkv">
+    <source src="./exemploVideosLocal.mov">
+    <source src="./exemploVideosLocal.mp4">
+</video>
