@@ -1,0 +1,21 @@
+/* "*": Seletor de estilo para configuração da página inteira */
+* {
+    background: silver;
+}
+
+/* "#titulo": Um id é usado apenas para identificar um único elemento no HTML.  */
+#titulo {
+    color: red;
+    font-size: 30px;
+}
+
+#paragrafo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ".botao": Usado para especificar um ou mais nomes de classe para um elemento HTML.  */
+.botao {
+    background: pink;
+}

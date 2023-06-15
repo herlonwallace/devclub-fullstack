@@ -1,0 +1,13 @@
+h1 {
+    color: red; 
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+button {
+    background: green;
+    border-color: darkgreen;
+}
