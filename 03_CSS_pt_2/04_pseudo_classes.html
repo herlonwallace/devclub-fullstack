@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+</head>
+<body>
+    <a href="#">Home</a>
+    <br>
+    <input type="checkbox">
+    <br>
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+        <li>Quarto</li>
+        <li>Quinto</li>
+    </ul>
+</body>
+    <style>
+        /*
+            Pseudo classes
+
+            :active -> quando o elemento está ativo, ou seja, está sendo pressionado.
+            :visided -> seleciona o link que foi visitado.
+            :hover -> quando o mouse passa em cima do elemento.
+            :checked -> usado em radio / checbox / select.
+            :disabled -> elemento desabilitado / button / input.
+            :enabled -> elemento está habilitado.
+            :focus -> é aplicada quando um elemento recebe foco, o que poder ocorrer quando o usuário seleciona o elemento.
+            :read-only -> seleciona input ou textarea que são apenas leitura.
+            :empty -> elemento que não tem filho.
+
+            :first-child -> primeiro filho / ex: primeira li de um ul / primeiro span de uma div.
+            :first-of-type -> primeiro elemento de seu tipo entre os filhos de seu elemento pai.
+            :last-child -> último filho
+            :last-of-type -> último elemento de seu tipo entre os filhos de seu elemento pai.
+            :not() -> estiliza os elementos, exeto o que está dentro do ().
+            :nth-child() -> seleciona o elemento baseado na sua posição. Ex: :nth-child(3).
+            :nth-last-child() -> seleciona o elemento baseado na sua posição, contando de trás para frente.
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:hover {
+            font-size: 30px;
+        }
+
+        input:checked {
+            width: 100px;
+            height: 100px;    
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+    </style>
+</html>

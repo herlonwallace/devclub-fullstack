@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <div class="div-dad">
+        <div class="div-son"></div>
+    </div>  
+    <div class="div-1">
+        Div
+    </div>  
+</body>
+    <style>
+        /*
+            position: static (padrão) - Não aceita valores de top, bottom, right e left.
+            position: fixed - fixa o elemento na tela.
+            position: sticky - age como um adesivo, fixa o elemento só onde eu determinar.
+            position: relative - posição relativa a posição inicial dele
+            position: absolute - posição absoluta(fixa) a algum elemento ou página.
+                                    - Se não tive pai / pai for static -> Posiciona referente a página
+                                    - Se o pai não for static -> Posiciona referência ao pai. 
+            
+            propriedades:
+                - top
+                - bottom
+                - left
+                - right
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 200vh;
+            width: 200vw;
+        }
+
+        .div-dad {
+            height: 350px;
+            width: 350px;
+            background-color: #ff1396;
+            position: fixed;
+            left: 300px;
+        }
+
+        .div-son {
+            height: 150px;
+            width: 150px;
+            background-color: #ffff00;
+        }
+
+        .div-1 {
+            background-color: #ff0000;
+            height: 150px;
+            width: 150px;
+        }
+
+    </style>
+</html>
