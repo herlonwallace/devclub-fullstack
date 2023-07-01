@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando Elementos</title>
+    <style>
+        h1 {
+            color: #2102b8;
+        }
+
+        button {
+            background: #9de600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <input id="main-input" placeholder="Digite aqui" name="nome-completo">
+    <p>Começando nossa Jornada para aprender</p>
+    <p class="paragraph-js">A linguagem de <b>Programação</b> mais versátil do mundo</p>
+    <button class="main-button">Clique aqui</button>
+</body>
+<script>
+    /*
+        textContent -> Pega todo s contéudo.
+        innerText -> Pega apenas o texto
+        innerHTML -> Permite adicionar HTML e texto
+    */
+
+    const element = document.querySelector(".paragraph-js");
+
+    console.log(element.textContent) //Só HTML
+    console.log(element.innerText) //Leva em conta o CSS
+    console.log(element.innerHTML) //Trás 
+
+</script>
+</html>

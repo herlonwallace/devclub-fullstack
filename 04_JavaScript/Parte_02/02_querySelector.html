@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gets Elements</title>
+    <style>
+        h1 {
+            color: #2102b8;
+        }
+
+        button {
+            background: #9de600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <input id="main-input" placeholder="Digite aqui" name="nome-completo">
+    <p class="paragraph-js">Começando nossa Jornada para aprender</p>
+    <p class="paragraph-js">A linguagem de Programação mais versátil do mundo</p>
+    <button class="main-button">Clique aqui</button>
+</body>
+<script>
+    /*
+
+        querySelector -> Trás um elemento, o primeiro que encontrar
+        querySelectorAll -> Trás todos os elementos que encontrar
+
+    */   
+
+    //const elements = document.querySelector("p");
+    const elements = document.querySelectorAll("p");
+    console.log(elements)
+</script>
+</html>
