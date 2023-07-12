@@ -1,0 +1,40 @@
+ Verbos HTTP
+
+    - GET: Leiura
+    - POST: Cria
+    - PUT: Atualização
+    - DELETE: Deleta
+    - PATCH: Atualização parcial
+
+
+Query Params
+
+    Query params = ?teste=1
+
+    http://api.com/celulares?name=samsung&preco=2000
+
+    (
+        {
+            methodo: 'get',
+            url: 'http://servidor.com/user?name=Wallace'
+        }
+    )
+
+
+Route Params
+
+    Route params = /users/1
+
+    GET - http://api.com/movies/1
+    DELETE - http://api.com/movies/1
+    PUT - http://api.com/movies/1
+
+    (
+        {
+            methodo: 'get',
+            url: 'http://servidor.com/user/3'
+        }
+    )
+
+
+
