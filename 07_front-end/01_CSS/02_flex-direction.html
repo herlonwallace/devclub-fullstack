@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 10px;
+            border: 1px solid #9758a6;
+            display: flex;
+            /* row, row-reverse, column, column-reverse */
+            flex-direction: column;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            background: #cdd728;
+            border: 5px soid #9758a6;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Direction</h1>
+    <div class="container">
+        <div class="block">Bloco 1</div>
+        <div class="block">Bloco 2</div>
+        <div class="block">Bloco 3</div>
+        <div class="block">Bloco 4</div>
+        <div class="block">Bloco 5</div>
+    </div>
+</body>
+
+</html>
