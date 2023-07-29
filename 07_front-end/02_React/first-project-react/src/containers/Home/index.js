@@ -1,12 +1,11 @@
 import { useRef, useState } from "react"
-
-import { Container, H1, Image, ContainerItens, InputLabel, Input, Button, User } from "./style"
+import { Link } from 'react-router-dom'
+import { Container, H1, Image, ContainerItens, InputLabel, Input, Button, } from "./style"
 
 import axios from "axios"
 
-import People from './assets/people.svg'
-import Arrow from './assets/arrow.svg'
-import Trash from './assets/trash.svg'
+import People from '../../assets/people.svg'
+import Arrow from '../../assets/arrow.svg'
 
 
 function App() {
@@ -19,12 +18,6 @@ function App() {
     const { data: newUser } = await axios.post("http://localhost:3001/users", { name: inputName.current.value, age: inputAge.current.value })
 
     setUsers([...users, newUser])
-
-  }
-
-  function deleteUser(userId) {
-    const newUsers = users.filter((user) => user.id != userId)
-    setUsers(newUsers)
   }
 
   return (
@@ -39,20 +32,10 @@ function App() {
         <InputLabel>Idade</InputLabel>
         <Input ref={inputAge} placeholder="Idade" />
 
-        <Button onClick={addNewUser}>
+        <Button to="/usuarios" onClick={addNewUser}>
           Cadastrar<img alt="seta" src={Arrow} />
         </Button>
 
-        <ul>
-          {users.map((user) => (
-            <User key={user.id}>
-              <p>{user.name}</p><p>{user.age}</p>
-              <button onClick={() => deleteUser(user.id)}>
-                <img src={Trash} alt="lata-de-lixo" />
-              </button>
-            </User>
-          ))}
-        </ul>
       </ContainerItens>
     </Container>
   )
