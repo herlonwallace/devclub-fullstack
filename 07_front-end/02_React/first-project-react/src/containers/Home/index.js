@@ -1,7 +1,9 @@
 import { useRef, useState } from "react"
 import { Link } from 'react-router-dom'
-import { Container, H1, Image, ContainerItens, InputLabel, Input, Button, } from "./style"
+import { Container, Image, ContainerItens, InputLabel, Input, Button, } from "./style"
 
+import H1 from '../../components/Title'
+import ContainerItens from "../../components/ContainerItens"
 import axios from "axios"
 
 import People from '../../assets/people.svg'

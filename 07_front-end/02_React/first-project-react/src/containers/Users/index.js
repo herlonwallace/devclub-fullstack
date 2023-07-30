@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 
-import { Container, H1, Image, ContainerItens, Button, User } from "./style"
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import { Container, Image, Button, User } from "./style"
 
 import axios from "axios"
 
@@ -32,7 +34,7 @@ function Users() {
   return (
     <Container>
       <Image alt="logo-imagem" src={Avatar} />
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuários</H1>
 
         <ul>

@@ -32,16 +32,6 @@ export const ContainerItens = styled.div`
     height: 100vh;
 `;
 
-export const H1 = styled.h1`
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 80px;
-`;
-
 export const Button = styled(Link)`
     width: 342px;
     height: 74px;
